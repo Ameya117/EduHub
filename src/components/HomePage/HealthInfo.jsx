@@ -29,8 +29,8 @@ const HealthInfo = () => {
           whileInView={{ opacity: 1 }}
         />
         <div className="healthinfo-card h-48 shadow-sm pt-3 border-2 rounded-lg border-blue-200 w-72 my-12 md:my-0">
-          <Link to="/" className="w-[10%] lg:w-[20%]">
-            <h1 className="text-center font-semibold text-xl">Physical</h1>
+          <Link to="/physicalhealth/info" className="w-[10%] lg:w-[20%]">
+            <h1 className="text-center font-semibold text-xl">Physical Health</h1>
             <span className="material-symbols-outlined flex justify-center">
               cardiology
             </span>
@@ -59,8 +59,8 @@ const HealthInfo = () => {
           whileInView={{ opacity: 1 }}
         />
         <div className="healthinfo-card h-48 shadow-sm pt-3 border-2 rounded-lg border-blue-200 w-72 my-12 md:my-0">
-          <Link to="/videos" className="w-[20%]">
-            <h1 className="text-center font-semibold text-xl">Mental</h1>
+          <Link to="/mentalhealth/info" className="w-[20%]">
+            <h1 className="text-center font-semibold text-xl">Mental Health</h1>
             <span className="material-symbols-outlined flex justify-center">
               neurology
             </span>

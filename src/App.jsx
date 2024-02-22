@@ -9,6 +9,8 @@ import Signup from "./components/Signup"
 import MentalHealthSurvey from "./components/Surveys/MentalHealthSurvey";
 import PhysicalHealthSurvey from "./components/Surveys/PhysicalHealthSurvey";
 import NutritionSurvey from "./components/Surveys/NutritionSurvey"
+import PhysicalHealthInfo from './components/InfoPages/PhysicalHealthInfo'
+import MentalHealthInfo from "./components/InfoPages/MentalHealthInfo";
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
             <Route exact path="/survey/mental" element={<MentalHealthSurvey />}></Route>
             <Route exact path="/survey/physical" element={<PhysicalHealthSurvey/>}></Route>
             <Route exact path="/survey/nutrition" element={<NutritionSurvey/>}></Route>
+            <Route exact path="/physicalhealth/info" element={<PhysicalHealthInfo />}></Route>
+            <Route exact path="/mentalhealth/info" element={<MentalHealthInfo />}></Route>
           </Routes>
          
         </Router>
