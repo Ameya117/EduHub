@@ -12,6 +12,7 @@ const HomepageVideos = () => {
       opacity: 1,
       x: 0,
       transition: {
+        duration: 0.8,
         delay: 0.4,
       },
     },
@@ -25,6 +26,7 @@ const HomepageVideos = () => {
       opacity: 1,
       x: 15,
       transition: {
+        duration: 0.8,
         delay: 0.4,
       },
     },
@@ -34,7 +36,7 @@ const HomepageVideos = () => {
       <div className="mx-6 mb-6 mt-24">
         <div className="text-slate-950 text-4xl border-b-4 border-slate-400 pb-2 flex flex-row justify-between">
           <span>Featured Videos</span>
-          <span className="text-xl hover:tracking-wide hover:cursor-pointer">
+          <span className="text-xl hover:tracking-wide hover:cursor-pointer hover:bg-slate-100 h-fit">
             <Link to="/videos">View All Videos &rarr;</Link>
           </span>
         </div>
@@ -98,7 +100,15 @@ const HomepageVideos = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-          <div className="text-slate-900 my-auto p-5 font-semibold italic text-xl hidden md:block">
+          <motion.div
+            className="text-slate-900 my-auto p-5 font-semibold italic text-xl hidden md:block"
+            variants={fadeInAnimationVariants1}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+          >
             “So efficient and hushed are our brains in their day to day
             operations, we are apt to miss what an extraordinary and complicated
             achievement it is to feel mentally well. A mind in a healthy state
@@ -108,7 +118,7 @@ const HomepageVideos = () => {
             what its opposite involves), we might take a moment to consider some
             of what will be going on in the folds of an optimally-functioning
             mind...”
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

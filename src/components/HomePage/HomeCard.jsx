@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 const HomeCard = () => {
   return (
     <div className="h-[85vh] w-full overflow-hidden">
@@ -23,7 +23,9 @@ const HomeCard = () => {
         </div>
         <div className="flex flex-col w-[80%] ml-12 md:ml-24 mt-10 h-24">
           <div>
-            <h1 className="text-lg md:text-3xl relative w-auto text-black md:text-white my-2">Get Started Now</h1>
+            <h1 className="text-lg md:text-3xl relative w-auto text-black md:text-white my-2">
+              Get Started Now
+            </h1>
             <Link
               className="text-md md:text-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-2 font-semibold rounded-sm px-5 py-1"
               to="/login"
@@ -32,7 +34,9 @@ const HomeCard = () => {
             </Link>
           </div>
           <div className="transition-all">
-            <h1 className="text-lg md:text-3xl relative w-auto my-2 text-black md:text-white">New user?</h1>
+            <h1 className="text-lg md:text-3xl relative w-auto my-2 text-black md:text-white">
+              New user?
+            </h1>
             <Link
               className="text-md md:text-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l  font-semibold rounded-sm px-4 py-1 transition-all "
               to="/signup"

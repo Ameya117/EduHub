@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
   return (
     <>
-      <div className="p-5 font-bold border-b-2 border-indigo-500  md:h-20  flex flex-row justify-between text-xl sticky top-0 bg-white z-10 bg-opacity-95 shadow-lg">
+      <div className={`${location.pathname==='/login'?'hidden':'block'} p-5 font-bold border-b-2 border-indigo-500  md:h-20  flex flex-row justify-between text-xl sticky top-0 bg-white z-10 bg-opacity-95 shadow-lg`}>
         <div className="ml-4">
             <h1 className="">EduHub</h1>
         </div>
