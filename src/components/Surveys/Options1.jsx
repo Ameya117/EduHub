@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-const Options1 = () => {
-  const [answer, setAnswer] = useState(0); // State to store the selected answer
+const Options1 = ({onChange}) => {
+  const [answer, setAnswer] = useState(""); // State to store the selected answer
 
   // Function to handle the change event of the checkboxes
   const handleCheckboxChange = (value) => {
     setAnswer(value);
+    onChange(value);
   };
   return (
     <>

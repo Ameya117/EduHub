@@ -18,8 +18,7 @@ const NutritionSurvey = () => {
     q7: "",
     q8: "",
     q9: "",
-    q10: "",
-    q11: "",
+    q10: ""
   });
 
   const handleInputChange = (question, answer) => {
