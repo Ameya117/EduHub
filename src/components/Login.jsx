@@ -30,7 +30,7 @@ const Login = () => {
 
         <img src="/loginpage.jpg" alt="" className="h-full object-cover" />
       </div>
-      <div className="w-[35%] h-[100vh] grid place-content-center">
+      <div className="w-[35%] h-[100vh] grid place-content-center ">
         <form onSubmit={handleLogin} className="flex flex-col">
           <h1 className="text-blue-600 font-bold text-5xl text-center mb-24">
             Login

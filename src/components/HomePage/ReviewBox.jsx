@@ -17,7 +17,7 @@ const ReviewBox = () => {
     }),
   };
   return (
-    <div className="mx-5">
+    <div className="mx-5 my-12">
       <div className="text-slate-950 text-4xl border-b-4 border-slate-400 pb-2 ">
         Customer Reviews
       </div>
