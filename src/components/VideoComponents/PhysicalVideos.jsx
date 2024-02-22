@@ -39,8 +39,8 @@ const PhysicalVideos = () => {
     },
   ];
   return (
-    <div className="rounded-lg mx-2 lg:mx-12">
-      <ScrollArea className="h-[75vh] my-4 w-full">
+    <div className="rounded-lg mx-2 lg:mx-12 border-slate-300 border-2 p-2">
+      <ScrollArea className="h-[75vh] w-full">
         {data.map((item) => {
           return (
             <div key={item.id}>

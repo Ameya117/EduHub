@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="p-5 shadow font-bold  md:h-20 border-b-4 border-indigo-500 flex flex-row justify-between text-xl">
+      <div className="p-5 font-bold border-b-2 border-indigo-500  md:h-20  flex flex-row justify-between text-xl sticky top-0 bg-white z-10 bg-opacity-95 shadow-lg">
         <div className="ml-4">
             <h1 className="">EduHub</h1>
         </div>

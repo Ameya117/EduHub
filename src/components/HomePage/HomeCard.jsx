@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom"
 const HomeCard = () => {
   return (
-    <div className="h-[85vh] w-[90vw] mx-auto overflow-hidden mt-2">
+    <div className="h-[85vh] w-full overflow-hidden">
       <img
         src="/2151046784.jpg"
         className="relative inset-0 h-full w-full object-cover rounded-md opacity-80 "

@@ -4,6 +4,7 @@ import HomeCard from './HomeCard'
 import HealthInfo from './HealthInfo'
 import HomepageVideos from './HomepageVideos'
 import Footer from '../Footer'
+import ReviewBox from './ReviewBox'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <News/>
       <HealthInfo/>
       <HomepageVideos />
+      <ReviewBox />
       <Footer />
     </>
   )
