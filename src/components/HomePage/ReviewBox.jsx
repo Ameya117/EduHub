@@ -1,6 +1,7 @@
 import React from "react";
 import { ReviewCard } from "./ReviewCard";
 import { motion } from "framer-motion";
+import '../../index.css'
 
 const ReviewBox = () => {
   const fadeInAnimationVariants = {
@@ -12,13 +13,14 @@ const ReviewBox = () => {
       opacity: 1,
       y: 0,
       transition: {
+        duration:0.5,
         delay: 0.18 * custom,
       },
     }),
   };
   return (
     <div className="mx-5 my-12">
-      <div className="text-slate-950 text-4xl border-b-4 border-slate-400 pb-2 ">
+      <div className="text-slate-950 text-5xl border-b-4 border-slate-400 pb-2 font-semibold teko-h1">
         Customer Reviews
       </div>
       <div className="review-container flex gap-4 m-5">

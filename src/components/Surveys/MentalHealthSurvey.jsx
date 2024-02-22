@@ -6,9 +6,11 @@ import Options3 from "./Options3";
 import Footer from "../Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../../index.css"
+import "../../index.css";
+import { useNavigate } from "react-router-dom";
 
 const MentalHealthSurvey = () => {
+  const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
   const [answers, setAnswers] = useState({
     q1: "",
@@ -21,7 +23,6 @@ const MentalHealthSurvey = () => {
     q8: "",
     q9: "",
     q10: "",
-    
   });
 
   const handleInputChange = (question, answer) => {
@@ -55,7 +56,9 @@ const MentalHealthSurvey = () => {
         progress: undefined,
       }
     );
-
+    setTimeout(function () {
+      navigate("/");
+    }, 5000);
     // Set submitted to true
     setSubmitted(true);
   };

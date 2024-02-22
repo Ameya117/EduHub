@@ -33,7 +33,7 @@ const PhysicalHealthInfo = () => {
 
       <div>
         <h3>Four Pillars of Health</h3>
-        <p className='health-info-p'>
+        <p className='health-info-p '>
           {" "}
           Maintaining good physical health decreases your risk of developing
           conditions such as heart disease, stroke and some cancers. Being
@@ -62,7 +62,7 @@ const PhysicalHealthInfo = () => {
           alt="pic2"
         ></img>
       </div>
-      <div>
+      <div className='mr-36'>
         <h3>Physical Health and Sleep</h3>
         <p className="t1">
           {" "}
@@ -100,15 +100,11 @@ const PhysicalHealthInfo = () => {
           interfere with getting quality sleep.
         </p>
 
-        <img
-          class="image5"
-          src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A5e3603e6ad79be0cddadcd2df4e8f0e194c7f24cab461e7825762021%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1"
-          alt="pic3"
-        ></img>
+      
       </div>
       <div>
         <h3>Ways to increase Physical Activity</h3>
-        <p className="t11">
+        <p className="t11 w-[70%]">
           Countries and communities must take action to provide everyone with
           more opportunities to be active, in order to increase physical
           activity. This requires a collective effort, both national and local,
@@ -117,35 +113,35 @@ const PhysicalHealthInfo = () => {
           to promote, enable and encourage physical activity.
         </p>
         <ul className="l1">
-          <li>
+          <li type="circle">
             Policies to increase physical activity aim to ensure that walking,
             cycling and other forms of active non-motorized forms of transport
             are accessible and safe for all
           </li>
-          <li>
+          <li type="circle">
             labour and workplace policies encourage active commuting and
             opportunities for being physically active during the work day
           </li>
-          <li>
+          <li type="circle">
             childcare, schools and higher education institutions provide
             supportive and safe spaces and facilities for all students to spend
             their free time actively
           </li>
-          <li>
+          <li type="circle">
             primary and secondary schools provide quality physical education
             that supports children to develop behaviour patterns that will keep
             them physically active throughout their lives
           </li>
-          <li>
+          <li type="circle">
             community-based and school-sport programmes provide appropriate
             opportunities for all ages and abilities
           </li>
-          <li>
+          <li type="circle">
             sports and recreation facilities provide opportunities for everyone
             to access and participate in a variety of different sports, dance,
             exercise and active recreation
           </li>
-          <li>
+          <li type="circle">
             health care providers advise and support patients to be regularly
             active.
           </li>

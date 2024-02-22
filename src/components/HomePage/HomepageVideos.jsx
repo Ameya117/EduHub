@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import '../../index.css'
 
 const HomepageVideos = () => {
   const fadeInAnimationVariants1 = {
@@ -34,8 +35,8 @@ const HomepageVideos = () => {
   return (
     <>
       <div className="mx-6 mb-6 mt-24">
-        <div className="text-slate-950 text-4xl border-b-4 border-slate-400 pb-2 flex flex-row justify-between">
-          <span>Featured Videos</span>
+        <div className="text-slate-950 text-5xl border-b-4 border-slate-400 pb-2 flex flex-row justify-between">
+          <span className="teko-h1 font-semibold">Featured Videos</span>
           <span className="text-xl hover:tracking-wide hover:cursor-pointer hover:bg-slate-100 h-fit">
             <Link to="/videos">View All Videos &rarr;</Link>
           </span>

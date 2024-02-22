@@ -4,7 +4,7 @@ const NewsCard = (props) => {
   const { title, urlToImg, url, author } = props;
   return (
     <>
-      <div className="w-64 h-72 mx-5 rounded-xl overflow-hidden shadow-lg bg-[#edebeb] relative">
+      <div className="w-64 h-72 mx-5 rounded-xl overflow-hidden shadow-lg bg-[#f4fdff] relative">
         <img
           className="w-full h-36 object-cover"
           src={urlToImg ? `${urlToImg}` : "/vite.svg"}

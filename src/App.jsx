@@ -11,6 +11,7 @@ import PhysicalHealthSurvey from "./components/Surveys/PhysicalHealthSurvey";
 import NutritionSurvey from "./components/Surveys/NutritionSurvey"
 import PhysicalHealthInfo from './components/InfoPages/PhysicalHealthInfo'
 import MentalHealthInfo from "./components/InfoPages/MentalHealthInfo";
+import NutritionInfo from "./components/InfoPages/NutritionInfo";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/survey/nutrition" element={<NutritionSurvey/>}></Route>
             <Route exact path="/physicalhealth/info" element={<PhysicalHealthInfo />}></Route>
             <Route exact path="/mentalhealth/info" element={<MentalHealthInfo />}></Route>
+            <Route exact path="/nutrition/info" element={<NutritionInfo />}></Route>
           </Routes>
          
         </Router>

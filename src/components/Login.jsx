@@ -1,13 +1,40 @@
-import React from "react";
+import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
   const navigate = useNavigate();
   const handleLogin = () => {
     //post api req to /login route
     console.log("submitted");
   };
 
+  const handleOnChange = (event) => {
+    setCredentials({ ...credentials, [event.target.name]: event.target.value })
+  
+  }
+
+  const handleOnSubmit = async (event) => {
+    event.preventDefault();
+
+    const response = await fetch(`http://localhost:4000/api/auth/userlogin`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email: credentials.email, password: credentials.password }),
+    });
+    const json = await response.json();
+    console.log(json);
+    if (json.success) {
+      localStorage.setItem('token', json.authtoken);
+      props.showAlert("success", "Log in successful!");
+      navigate("/");
+    } else {
+      console.log("Internal Server error")
+    }
+
+  }
   const handleNewUser = ()=>{
     navigate("/signup");
   }

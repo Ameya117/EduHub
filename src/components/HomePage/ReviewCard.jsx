@@ -4,7 +4,7 @@ export const ReviewCard = ({ name, occupation, review }) => {
   return (
     <>
       <div className="review-card pb-5 px-5 rounded-xl bg-blue-50 border-blue-400 border-2">
-        <h3 className="text-3xl font-extrabold decoration-slate-600 text-blue-400">
+        <h3 className="text-3xl font-extrabold decoration-slate-600 text-blue-400 text-left">
           {name}
         </h3>
         <p className="font-semibold font-serif my-5 text-xl">{occupation}</p>

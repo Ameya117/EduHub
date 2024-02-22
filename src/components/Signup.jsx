@@ -20,7 +20,7 @@ const Signup = () => {
             Create A New Account
           </h1>
           <div className="bg-white h-3 w-32 rounded-xl ml-80 my-8"></div>
-          <p className="w-1/3 hidden lg:block lg:ml-64">
+          <p className="w-1/3 hidden lg:block lg:ml-48">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum
             velit voluptas ipsa ab ea ut, sapiente labore minima eaque.
           </p>
@@ -31,7 +31,7 @@ const Signup = () => {
       <div className="w-[45%] ml-24 sm:ml-48 md:ml-56 lg:ml-0 lg:w-[35%] h-[100vh] grid place-content-center">
         <form onSubmit={handleSignup} className="flex flex-col">
           <h1 className="text-blue-600 font-bold text-5xl text-center mb-24">
-            SignUp
+            Signup
           </h1>
           {/* <label htmlFor="username">Username</label> */}
 
