@@ -19,7 +19,7 @@ const HealthInfo = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1.7]);
 
   return (
-    <div className="flex flex-col md:flex-row justify-evenly healthinfo-card-group my-4 ml-12">
+    <div className="flex flex-col md:flex-row justify-evenly healthinfo-card-group my-4">
       <motion.div style={{ scale }}>
         <motion.div
           style={{

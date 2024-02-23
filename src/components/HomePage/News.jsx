@@ -38,7 +38,7 @@ const News = () => {
           opts={{
             align: "start",
           }}
-          className="w-[75%] mx-auto "
+          className="w-[75%] mx-auto"
         >
           <CarouselContent >
             {news.map((item) => {

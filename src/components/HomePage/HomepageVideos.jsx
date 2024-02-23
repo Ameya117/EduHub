@@ -43,7 +43,7 @@ const HomepageVideos = () => {
         </div>
         <div className="h-[40vh] mt-4 border-2 border-black rounded-xl m-2 p-2 flex">
           <iframe
-            className="w-[80vw]"
+            className="w-[80vw] mx-auto"
             src="https://www.youtube.com/embed/azuBmRnRYpo?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1"
             title="Why is physical education a student's most important subject? | William Simon, Jr. | TEDxUCLA"
             frameBorder="0"
@@ -84,7 +84,7 @@ const HomepageVideos = () => {
             nutrients that can positively impact health.
           </motion.div>
           <iframe
-            className="w-[80vw]"
+            className="w-[80vw] mx-auto"
             src="https://www.youtube.com/embed/c06dTj0v0sM?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1"
             title="Nutrition for a Healthy Life"
             frameBorder="0"
@@ -94,7 +94,7 @@ const HomepageVideos = () => {
         </div>
         <div className="h-[40vh] mt-4 border-2 border-black rounded-xl m-2 p-2 flex">
           <iframe
-            className="w-[80vw]"
+            className="w-[80vw] mx-auto"
             src="https://www.youtube.com/embed/oxx564hMBUI?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1"
             title="What Is Mental Health?"
             frameBorder="0"
@@ -115,10 +115,10 @@ const HomepageVideos = () => {
             achievement it is to feel mentally well. A mind in a healthy state
             is, in the background, continually performing a near-miraculous set
             of manoeuvres that underpin our moods of clear-sightedness and
-            purpose. To appreciate what mental health might be (and therefore
+            purpose.<span className="hidden lg:block">To appreciate what mental health might be (and therefore
             what its opposite involves), we might take a moment to consider some
             of what will be going on in the folds of an optimally-functioning
-            mind...”
+            mind...”</span> 
           </motion.div>
         </div>
       </div>
