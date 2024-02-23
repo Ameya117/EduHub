@@ -2,9 +2,11 @@ import React from "react";
 import Footer from "../Footer";
 import '../../index.css'
 import QNA from "../QNA";
+import HeadNutrition from "./HeadNutrition";
 const NutritionInfo = () => {
   return (
     <>
+    <HeadNutrition />
       <div className="di1">
         <h3>What is Nutritional Health?</h3>
         <p className="w-[80vw] mx-auto">

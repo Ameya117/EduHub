@@ -1,8 +1,18 @@
 import React, { useState } from "react";
-import { Link,useLocation } from "react-router-dom";
+import { Link,useLocation,useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  const token = localStorage.getItem('auth-token');
+  if(token){
+
+  }
+
+  const handleLogout = ()=>{
+      localStorage.removeItem('auth-token');
+      navigate("/login");
+  }
   return (
     <>
       <div className={`${location.pathname==='/login'?'hidden':'block'} ${location.pathname==='/signup'?'hidden':'block'} p-5 font-bold border-b-2 border-indigo-500  md:h-20  flex flex-row justify-between text-xl sticky top-0 bg-white z-10 bg-opacity-95 shadow-lg`}>
@@ -16,7 +26,8 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="mr-4">
-           <Link to="/login">Login</Link> 
+           <Link to="/login" className={`${token?'hidden':'block'}`}>Login</Link> 
+           <Link to="/login" className={`${token?'block':'hidden'}`} onClick={handleLogout}>Logout</Link> 
         </div>
 
       </div>

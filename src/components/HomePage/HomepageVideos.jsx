@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import '../../index.css'
+import "../../index.css";
 
 const HomepageVideos = () => {
   const fadeInAnimationVariants1 = {
@@ -13,8 +13,8 @@ const HomepageVideos = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
-        delay: 0.4,
+        duration: 0.5,
+        delay: 0.3,
       },
     },
   };
@@ -27,8 +27,8 @@ const HomepageVideos = () => {
       opacity: 1,
       x: 15,
       transition: {
-        duration: 0.8,
-        delay: 0.4,
+        duration: 0.5,
+        delay: 0.3,
       },
     },
   };

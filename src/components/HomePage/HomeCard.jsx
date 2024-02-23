@@ -10,13 +10,13 @@ const HomeCard = () => {
       />
       <div className="relative -top-[90%]  w-[90vw]">
         <div className="ml-12 md:ml-24">
-          <h1 className="text-xl md:text-6xl font-semibold md:font-extrabold">
+          <h1 className="text-3xl md:text-6xl font-bold md:font-extrabold">
             Health EduHub
           </h1>
-          <h1 className="text-lg md:text-2xl ">
+          <h1 className="text-lg md:text-2xl font-semibold italic">
             Empowering Minds, Nourishing Bodies
           </h1>
-          <h2 className="text-xl">
+          <h2 className="text-xl hidden md:block">
             Elevating Student Health with Expert Guidance and Energizing
             Resources for Mind and Body Wellness!
           </h2>

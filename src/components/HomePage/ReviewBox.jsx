@@ -19,7 +19,7 @@ const ReviewBox = () => {
     }),
   };
   return (
-    <div className="mx-5 my-12">
+    <div className="mx-5 my-12 hidden md:block">
       <div className="text-slate-950 text-5xl border-b-4 border-slate-400 pb-2 font-semibold teko-h1">
         Customer Reviews
       </div>
