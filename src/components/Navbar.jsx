@@ -26,8 +26,8 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="mr-4">
-           <Link to="/login" className={`${token?'hidden':'block'}`}>Login</Link> 
-           <Link to="/login" className={`${token?'block':'hidden'}`} onClick={handleLogout}>Logout</Link> 
+           <Link to="/login" className={`${token?'hidden':'block'} font-light border-2 border-black px-4 py-1 rounded-xl hover:bg-black hover:text-white`}>Login</Link> 
+           <Link to="/login" className={`${token?'block':'hidden'} font-light border-2 border-black px-4 py-1 rounded-xl hover:bg-black hover:text-white`} onClick={handleLogout}>Logout</Link> 
         </div>
 
       </div>

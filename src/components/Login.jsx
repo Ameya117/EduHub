@@ -14,41 +14,41 @@ const Login = () => {
 
   const handleOnSubmit = async (event) => {
     event.preventDefault();
-
-    const response = await fetch(`http://localhost:4000/api/auth/userlogin`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ email: credentials.email, password: credentials.password }),
-    });
-    const json = await response.json();
-    console.log(json);
-    if (json.success) {
-      localStorage.setItem('auth-token', json.authtoken);
-      toast.success("Login Succesful....Redirecting to Home page", {
-        position: "top-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: true,
-        progress: undefined,
-      });
-      setTimeout(function () {
-        navigate("/");
-      }, 3000);
-    } else {
-      toast.error("Internal Server Error", {
-        position: "top-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: true,
-        progress: undefined,
-      });
-    }
+console.log("submitted")
+    // const response = await fetch(`http://localhost:4000/api/auth/userlogin`, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify({ email: credentials.email, password: credentials.password }),
+    // });
+    // const json = await response.json();
+    // console.log(json);
+    // if (json.success) {
+    //   localStorage.setItem('auth-token', json.authtoken);
+    //   toast.success("Login Succesful....Redirecting to Home page", {
+    //     position: "top-right",
+    //     autoClose: 3000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: false,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    //   setTimeout(function () {
+    //     navigate("/");
+    //   }, 3000);
+    // } else {
+    //   toast.error("Internal Server Error", {
+    //     position: "top-right",
+    //     autoClose: 3000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: false,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    // }
 
   }
   const handleNewUser = ()=>{

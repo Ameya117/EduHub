@@ -10,6 +10,12 @@ import "../../index.css";
 import { useNavigate } from "react-router-dom";
 
 const MentalHealthSurvey = () => {
+  const token = localStorage.getItem('auth-token');
+  if(token){
+
+  } else{
+    
+  }
   const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
   const [answers, setAnswers] = useState({
