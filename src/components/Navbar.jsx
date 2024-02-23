@@ -8,9 +8,13 @@ const Navbar = () => {
   if(token){
 
   }
-
+  const handleLogin = ()=>{
+    navigate("/login");
+  }
   const handleLogout = ()=>{
       localStorage.removeItem('auth-token');
+      localStorage.removeItem('token');
+      localStorage.removeItem('accessToken');
       navigate("/login");
   }
   return (

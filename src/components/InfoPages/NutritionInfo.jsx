@@ -52,9 +52,9 @@ const NutritionInfo = () => {
           alt="pic2"
         ></img>
       </div>
-      <div>
+      <div className="w-[90%] mx-auto">
         <h3>Essential Components of a Balanced Diet</h3>
-        <p className="t1">
+        <p >
           There are seven essential components of a balanced diet:
         </p>
         <ul className="l1">
@@ -95,12 +95,12 @@ const NutritionInfo = () => {
         </ul>
 
         <img
-          class="image3"
+          className="image3"
           src="https://www.highspeedtraining.co.uk/hub/wp-content/uploads/2017/04/healthy-eating-triangle.png"
           alt="pic3"
         ></img>
       </div>
-      <div>
+      <div className="w-[90%] mx-auto">
         <h3>Creating a Balanced Diet</h3>
         <p className="t11">
           The creation of a balanced diet includes many factors.individual

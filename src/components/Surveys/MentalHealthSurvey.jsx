@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import images from "/Mental.avif";
 import Options1 from "./Options1";
 import Options2 from "./Options2";
@@ -10,13 +10,26 @@ import "../../index.css";
 import { useNavigate } from "react-router-dom";
 
 const MentalHealthSurvey = () => {
-  const token = localStorage.getItem('auth-token');
-  if(token){
-
-  } else{
-    
-  }
   const navigate = useNavigate();
+  const token = localStorage.getItem('auth-token');
+  useEffect(()=>{
+    if(!token){
+      toast.error("Please login to continue",{
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      alert("Login to continue");
+      navigate("/login");
+    } else{
+
+    }
+  },[]);
+ 
   const [submitted, setSubmitted] = useState(false);
   const [answers, setAnswers] = useState({
     q1: "",
@@ -79,7 +92,7 @@ const MentalHealthSurvey = () => {
             alt="Mental Health Survey"
           />
           <div className="absolute my-[6rem]">
-            <h1 className="font-bold text-[4rem] text-amber-400 italic font">
+            <h1 className="font-bold text-[4rem] text-amber-400 italic">
               Mental Health Survey
             </h1>
           </div>
@@ -195,7 +208,7 @@ const MentalHealthSurvey = () => {
             <div className="font-extralight text-xl">
               <input
                 type="text"
-                className="w-[50rem] h-[5rem] border border-gray-300 rounded-md py-1 px-4 focus:outline-none focus:border-blue-500 m-2"
+                className="md:w-[30rem] lg:w-[50rem] h-[5rem] border border-gray-300 rounded-md py-1 px-4 focus:outline-none focus:border-blue-500 m-2"
                 placeholder="Share your thoughts..."
               />
             </div>
@@ -204,7 +217,6 @@ const MentalHealthSurvey = () => {
           {/* Other questions and options */}
         </div>
         <div className="text-center mt-8">
-          <div>
             <button
               onClick={handleSubmit}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-5 rounded w-[8rem] h-[3rem]"
@@ -213,7 +225,6 @@ const MentalHealthSurvey = () => {
               {submitted ? "Submitted" : "Submit"}
             </button>
             <ToastContainer />
-          </div>
         </div>
       </div>
       <Footer />

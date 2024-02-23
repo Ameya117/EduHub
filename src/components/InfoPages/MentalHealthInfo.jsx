@@ -5,9 +5,9 @@ import QNA from "../QNA";
 const MentalHealthInfo = () => {
   return (
     <>
-      <div id="1">
+      <div className="w-[90%]">
         <h3>What is Mental Health?</h3>
-        <p className="what">
+        <p className="w-[90%] mx-auto">
           Mental health is a state of mental well-being that enables people to
           cope with the stresses of life, realize their abilities, learn well
           and work well, and contribute to their community.
@@ -19,9 +19,9 @@ const MentalHealthInfo = () => {
         ></img>
       </div>
 
-      <div id="2">
+      <div className="w-[90%] mx-auto">
         <h3>Early signs of a mental disorder:</h3>
-        <p className="ml-80 w-[65%]">
+        <p className="w-[90%] mx-auto">
           No physical test or scan reliably indicates whether a person has
           developed a mental illness. However, people should look out for the
           following as possible signs of a mental health disorder:
@@ -43,9 +43,9 @@ const MentalHealthInfo = () => {
           alt="effects of mental health"
         ></img>
       </div>
-      <div id="3">
+      <div className="w-[90%] mx-auto">
         <h3>Some key points about mental health:</h3>
-        <p id="t1" className="ml-80 w-[65%]">
+        <p id="t1" className="w-[90%] mx-auto">
           Mental health is a broad topic encompassing our emotional,
           psychological, and social well-being.
         </p>
@@ -84,9 +84,9 @@ const MentalHealthInfo = () => {
           alt="be strong!"
         ></img>
       </div>
-      <div className="al" id="4">
+      <div className="w-[90%] mx-auto" id="4">
         <h3>Healthy ways to cope with stress</h3>
-        <p className="ml-80 w-[65%]">
+        <p className="w-[90%] mx-auto">
           Here are some ways you can manage stress, anxiety, grief, or
           worry.Keep these in mind whwnver you feel low!
         </p>

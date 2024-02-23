@@ -6,8 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 const Signup = () => {
   const navigate = useNavigate();
 
- 
-
   const [credentials, setCredentials] = useState({
     username: "",
     email: "",
@@ -19,48 +17,47 @@ const Signup = () => {
   };
   const handleOnSubmit = async (event) => {
     event.preventDefault();
-    console.log("submitted");
-    //api req to "/api/auth/createuser" route, METHOD:POST
-  //   const response = await fetch(`http://localhost:4000/api/auth/createuser`, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({
-  //       username: credentials.username,
-  //       email: credentials.email,
-  //       password: credentials.password,
-  //     }),
-  //   });
+    // api req to "/api/auth/createuser" route, METHOD:POST
+    const response = await fetch(`http://localhost:4000/api/auth/createuser`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: credentials.username,
+        email: credentials.email,
+        password: credentials.password,
+      }),
+    });
 
-  //   const json = await response.json();
-  //   console.log(json);
-  //   if (json.success) {
-  //     localStorage.setItem("token", json.authtoken);
-  //     toast.success("Signup Succesful....Redirecting to Login page", {
-  //       position: "top-right",
-  //       autoClose: 3000,
-  //       hideProgressBar: false,
-  //       closeOnClick: true,
-  //       pauseOnHover: false,
-  //       draggable: true,
-  //       progress: undefined,
-  //     });
-  //     setTimeout(function () {
-  //       navigate("/login");
-  //     }, 3000);
-  //   } else {
-  //     console.log(credentials);
-  //     toast.error("Internal Server Error...Try again", {
-  //       position: "top-right",
-  //       autoClose: 3000,
-  //       hideProgressBar: false,
-  //       closeOnClick: true,
-  //       pauseOnHover: false,
-  //       draggable: true,
-  //       progress: undefined,
-  //     });
-  //   }
+    const json = await response.json();
+    console.log(json);
+    if (json.success) {
+      localStorage.setItem("token", json.authtoken);
+      toast.success("Signup Succesful....Redirecting to Login page", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
+      setTimeout(function () {
+        navigate("/login");
+      }, 3000);
+    } else {
+      console.log(credentials);
+      toast.error("Internal Server Error...Try again", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   };
 
   const handleLoginPage = () => {
@@ -129,13 +126,13 @@ const Signup = () => {
               Login
             </span>
           </h2>
-            <button
-              type="submit"
-              className="rounded-xl bg-blue-500 py-1 font-semibold mt-12 text-lg text-white hover:bg-blue-600"
-            >
-              Signup
-            </button>
-            <ToastContainer />
+          <button
+            type="submit"
+            className="rounded-xl bg-blue-500 py-1 font-semibold mt-12 text-lg text-white hover:bg-blue-600"
+          >
+            Signup
+          </button>
+          <ToastContainer />
         </form>
       </div>
     </div>

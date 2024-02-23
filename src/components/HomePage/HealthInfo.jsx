@@ -42,7 +42,7 @@ const HealthInfo = () => {
             </div>
           </Link>
           <span
-            className="material-symbols-outlined hover:cursor-pointer grid place-content-center my-2"
+            className="material-symbols-outlined hover:cursor-pointer grid place-content-center my-2 w-fit mx-auto"
             onClick={handlePhysicalSurvey}
           >
             open_in_new
@@ -72,7 +72,7 @@ const HealthInfo = () => {
             </div>
           </Link>
           <span
-            className="material-symbols-outlined hover:cursor-pointer grid place-content-center my-2"
+            className="material-symbols-outlined hover:cursor-pointer grid place-content-center my-2 w-fit mx-auto"
             onClick={handleMentalSurvey}
           >
             open_in_new
@@ -102,7 +102,7 @@ const HealthInfo = () => {
             </div>
           </Link>
           <span
-            className="material-symbols-outlined hover:cursor-pointer grid place-content-center my-2"
+            className="material-symbols-outlined hover:cursor-pointer grid place-content-center my-2 w-fit mx-auto"
             onClick={handleNutritionSurvey}
           >
             open_in_new

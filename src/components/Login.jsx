@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -6,54 +6,55 @@ import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const navigate = useNavigate();
-  
 
   const handleOnChange = (event) => {
-    setCredentials({ ...credentials, [event.target.name]: event.target.value })
-  }
+    setCredentials({ ...credentials, [event.target.name]: event.target.value });
+  };
 
   const handleOnSubmit = async (event) => {
     event.preventDefault();
-console.log("submitted")
-    // const response = await fetch(`http://localhost:4000/api/auth/userlogin`, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify({ email: credentials.email, password: credentials.password }),
-    // });
-    // const json = await response.json();
-    // console.log(json);
-    // if (json.success) {
-    //   localStorage.setItem('auth-token', json.authtoken);
-    //   toast.success("Login Succesful....Redirecting to Home page", {
-    //     position: "top-right",
-    //     autoClose: 3000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: false,
-    //     draggable: true,
-    //     progress: undefined,
-    //   });
-    //   setTimeout(function () {
-    //     navigate("/");
-    //   }, 3000);
-    // } else {
-    //   toast.error("Internal Server Error", {
-    //     position: "top-right",
-    //     autoClose: 3000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: false,
-    //     draggable: true,
-    //     progress: undefined,
-    //   });
-    // }
-
-  }
-  const handleNewUser = ()=>{
+    //api req to "/api/auth/userlogin" , METHOD:POST
+    const response = await fetch(`http://localhost:4000/api/auth/userlogin`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: credentials.email,
+        password: credentials.password,
+      }),
+    });
+    const json = await response.json();
+    console.log(json);
+    if (json.success) {
+      localStorage.setItem("auth-token", json.authtoken);
+      toast.success("Login Succesful....Redirecting to Home page", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
+      setTimeout(function () {
+        navigate("/");
+      }, 3000);
+    } else {
+      toast.error("Internal Server Error", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+  const handleNewUser = () => {
     navigate("/signup");
-  }
+  };
 
   return (
     <div className="flex flex-row h-[100vh]">
@@ -72,7 +73,11 @@ console.log("submitted")
           </p>
         </div>
 
-        <img src="/loginpage.jpg" alt="login page background" className="h-full object-cover" />
+        <img
+          src="/loginpage.jpg"
+          alt="login page background"
+          className="h-full object-cover"
+        />
       </div>
       <div className="w-[35%] h-[100vh] grid place-content-center mx-auto">
         <form onSubmit={handleOnSubmit} className="flex flex-col">
@@ -98,10 +103,23 @@ console.log("submitted")
             autoComplete="off"
             onChange={handleOnChange}
           />
-          <h2>New user? Sign up <span className="text-blue-800 underline hover:cursor-pointer" onClick={handleNewUser}>here</span></h2>
+          <h2>
+            New user? Sign up{" "}
+            <span
+              className="text-blue-800 underline hover:cursor-pointer"
+              onClick={handleNewUser}
+            >
+              here
+            </span>
+          </h2>
 
-          <button type="submit" className="rounded-xl bg-blue-500 py-1 font-semibold mt-12 text-lg text-white hover:bg-blue-600">Login</button>
-        <ToastContainer />
+          <button
+            type="submit"
+            className="rounded-xl bg-blue-500 py-1 font-semibold mt-12 text-lg text-white hover:bg-blue-600"
+          >
+            Login
+          </button>
+          <ToastContainer />
         </form>
       </div>
     </div>

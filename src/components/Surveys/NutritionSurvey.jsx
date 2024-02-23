@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import images from "/nutrition.avif";
 import Options1 from "./Options1";
 import Options2 from "./Options2";
@@ -10,6 +10,24 @@ import { useNavigate } from "react-router-dom";
 const NutritionSurvey = () => {
   const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
+  const token = localStorage.getItem('auth-token');
+  useEffect(()=>{
+    if(!token){
+      toast.error("Please login to continue",{
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      alert("Login to continue");
+      navigate("/login");
+    } else{
+
+    }
+  },[]);
   const [answers, setAnswers] = useState({
     q1: "",
     q2: "",

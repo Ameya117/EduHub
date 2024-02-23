@@ -8,7 +8,7 @@ const PhysicalHealthInfo = () => {
   return (
     <>
     {<HeadPhy/  >}
-      <div className="di1">
+      <div className="di1 w-[90%] mx-auto">
         <h3> What is Physical Health?</h3>
         <p className='health-info-p'>
           {" "}
@@ -33,7 +33,7 @@ const PhysicalHealthInfo = () => {
 
       <div>
         <h3>Four Pillars of Health</h3>
-        <p className='health-info-p '>
+        <p className='health-info-p w-[90%] mx-auto'>
           {" "}
           Maintaining good physical health decreases your risk of developing
           conditions such as heart disease, stroke and some cancers. Being
@@ -62,9 +62,9 @@ const PhysicalHealthInfo = () => {
           alt="pic2"
         ></img>
       </div>
-      <div className='mr-36'>
+      <div className='mx-auto'>
         <h3>Physical Health and Sleep</h3>
-        <p className="t1">
+        <p className="t1 w-[90%] mx-auto">
           {" "}
           The relationship between sleep and overall physical health is complex
           and interconnected. Sleep allows both the body and brain to recover
@@ -78,7 +78,7 @@ const PhysicalHealthInfo = () => {
           night. This can also lower your body's defenses against diseases and
           medical conditions.
         </p>
-        <p className="t1">
+        <p className="t1 w-[90%] mx-auto">
           A person's physical health can impact whether or not they get enough
           high-quality sleep. Physical and mental illnesses can cause a person
           to fall short on sleep. Similarly, medications and supplements a
@@ -102,9 +102,9 @@ const PhysicalHealthInfo = () => {
 
       
       </div>
-      <div>
+      <div className='w-[90%] mx-auto'>
         <h3>Ways to increase Physical Activity</h3>
-        <p className="t11 w-[70%]">
+        <p className="t11 w-[90%] mx-auto">
           Countries and communities must take action to provide everyone with
           more opportunities to be active, in order to increase physical
           activity. This requires a collective effort, both national and local,
@@ -149,12 +149,12 @@ const PhysicalHealthInfo = () => {
         <img
           className="image5"
           src="https://i.pinimg.com/originals/c1/b9/ab/c1b9ab7396615778f2a0903d420cd10f.gif"
-        ></img>
+        />
         <QNA/>
+      </div>
         <footer>
           <Footer />
         </footer>
-      </div>
     </>
   );
 };
