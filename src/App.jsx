@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/HomePage/Home";
 import Videos from "./components/Videos";
@@ -32,7 +32,6 @@ function App() {
             <Route exact path="/mentalhealth/info" element={<MentalHealthInfo />}></Route>
             <Route exact path="/nutrition/info" element={<NutritionInfo />}></Route>
           </Routes>
-         
         </Router>
     </>
   );

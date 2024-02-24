@@ -76,7 +76,8 @@ const Login = () => {
               </h1>
               <div className="bg-white h-3 w-20 rounded-xl mx-auto my-8"></div>
               <p className="w-[50%] mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, eos.
               </p>
             </div>
           </div>
@@ -84,7 +85,7 @@ const Login = () => {
       </div>
       <div className="w-[35%] h-[100vh] grid place-content-center mx-auto">
         <form onSubmit={handleOnSubmit} className="flex flex-col">
-        <h1 className="text-blue-600 font-bold text-7xl text-center mb-24 block lg:hidden">
+          <h1 className="text-blue-600 font-bold text-7xl text-center mb-24 block lg:hidden">
             EduHub
           </h1>
           <h1 className="text-blue-600 font-bold text-5xl text-center mb-24">
