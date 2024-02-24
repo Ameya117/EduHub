@@ -58,29 +58,35 @@ const Login = () => {
 
   return (
     <div className="flex flex-row h-[100vh]">
-      <div className="w-[65%] hidden lg:block">
-        <div className="text-white absolute mt-64 ml-10 md:ml-24 xl:ml-64 w-[50%]">
-          <h2 className="text-white font-light text-xl ml-36 sm:ml-42 md:ml-48 w-fit">
-            Nice to see you again
-          </h2>
-          <h1 className="z-20 text-7xl font-bold text-white tracking-wide text-center lg:text-left">
-            Welcome Back
-          </h1>
-          <div className="bg-white h-3 w-20 rounded-xl ml-64 my-8"></div>
-          <p className="w-[50%] ml-36 lg:ml-24">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum
-            velit voluptas ipsa ab ea ut, sapiente labore minima eaque.
-          </p>
-        </div>
-
+      <div className="w-[65%] mx-auto shadow-2xl overflow-hidden relative hidden lg:block">
         <img
+          className="absolute inset-0 h-full w-full object-cover"
           src="/loginpage.jpg"
-          alt="login page background"
-          className="h-full object-cover"
+          alt="dog training"
         />
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
+        <div className="flex h-full items-center justify-center relative">
+          <div className=" flex flex-col justify-center items-center pl-2 w-1/2 lg:w-2/3 ">
+            <div className="text-white absolute m-auto w-[50%]">
+              <h2 className="text-white font-light text-xl mx-auto w-fit">
+                Nice to see you again
+              </h2>
+              <h1 className="z-20 text-7xl font-bold text-white tracking-wide text-center ">
+                Welcome Back
+              </h1>
+              <div className="bg-white h-3 w-20 rounded-xl mx-auto my-8"></div>
+              <p className="w-[50%] mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eos.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="w-[35%] h-[100vh] grid place-content-center mx-auto">
         <form onSubmit={handleOnSubmit} className="flex flex-col">
+        <h1 className="text-blue-600 font-bold text-7xl text-center mb-24 block lg:hidden">
+            EduHub
+          </h1>
           <h1 className="text-blue-600 font-bold text-5xl text-center mb-24">
             Login
           </h1>

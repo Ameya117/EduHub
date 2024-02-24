@@ -66,7 +66,7 @@ const Signup = () => {
 
   return (
     <div className="flex flex-row h-[100vh]">
-      <div className="w-fit hidden lg:block">
+      {/* <div className="w-fit hidden lg:block">
         <div className="text-white absolute mt-64 ml-12 lg:ml-48 w-[50%]">
           <h1 className="text-2xl lg:text-7xl font-bold text-white tracking-wide w-1/3 lg:w-1/2 text-center">
             Create A New Account
@@ -79,7 +79,30 @@ const Signup = () => {
         </div>
 
         <img src="/loginpage.jpg" alt="" className="h-full object-cover" />
+      </div> */}
+      <div className="w-[65%] mx-auto shadow-2xl overflow-hidden relative hidden lg:block">
+        <img
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/loginpage.jpg"
+          alt="dog training"
+        />
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
+        <div className="flex h-full items-center justify-center relative">
+          <div className=" flex flex-col justify-center items-center pl-2 w-1/2 lg:w-2/3 ">
+            <div className="text-white absolute m-auto w-[50%]">
+              
+              <h1 className="z-20 text-7xl font-bold text-white tracking-wide text-center ">
+              Create A New Account
+              </h1>
+              <div className="bg-white h-3 w-20 rounded-xl mx-auto my-8"></div>
+              <p className="w-[50%] mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eos.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      
       <div className="w-[45%] mx-auto  lg:ml-0 lg:w-[35%] h-[100vh] grid place-content-center">
         <form onSubmit={handleOnSubmit} className="flex flex-col">
           <h1 className="text-blue-600 font-bold text-7xl text-center mb-24 block lg:hidden">
