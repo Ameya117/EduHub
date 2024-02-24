@@ -59,7 +59,7 @@ const Login = () => {
   return (
     <div className="flex flex-row h-[100vh]">
       <div className="w-[65%] hidden lg:block">
-        <div className="text-white absolute mt-64 ml-10 md:ml-24 xl:ml-64 w-1/2 lg:w-fit">
+        <div className="text-white absolute mt-64 ml-10 md:ml-24 xl:ml-64 w-[50%]">
           <h2 className="text-white font-light text-xl ml-36 sm:ml-42 md:ml-48 w-fit">
             Nice to see you again
           </h2>

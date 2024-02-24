@@ -67,7 +67,7 @@ const Signup = () => {
   return (
     <div className="flex flex-row h-[100vh]">
       <div className="w-fit hidden lg:block">
-        <div className="text-white absolute mt-64 ml-12 lg:ml-48 w-fit">
+        <div className="text-white absolute mt-64 ml-12 lg:ml-48 w-[50%]">
           <h1 className="text-2xl lg:text-7xl font-bold text-white tracking-wide w-1/3 lg:w-1/2 text-center">
             Create A New Account
           </h1>
