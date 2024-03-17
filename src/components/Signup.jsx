@@ -66,19 +66,7 @@ const Signup = () => {
 
   return (
     <div className="flex flex-row h-[100vh]">
-      {/* <div className="w-fit hidden lg:block">
-        <div className="text-white absolute mt-64 ml-12 lg:ml-48 w-[50%]">
-          <h1 className="text-2xl lg:text-7xl font-bold text-white tracking-wide w-1/3 lg:w-1/2 text-center">
-            Create A New Account
-          </h1>
-          <div className="bg-white h-3 w-32 rounded-xl lg:ml-56 my-8"></div>
-          <p className="w-1/3 hidden lg:block lg:ml-36">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum
-            velit voluptas ipsa ab ea ut, sapiente labore minima eaque.
-          </p>
-        </div>
-        <img src="/loginpage.jpg" alt="" className="h-full object-cover" />
-      </div> */}
+    
       <div className="w-[65%] mx-auto shadow-2xl overflow-hidden relative hidden lg:block">
         <img
           className="absolute inset-0 h-full w-full object-cover"
