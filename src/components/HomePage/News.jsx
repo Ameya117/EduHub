@@ -63,7 +63,7 @@ const News = () => {
     //     <div className="text-center mx-auto grid place-content-center">{<Loading/>}</div>
     //   )}
     // </div>
-  );
+  )
 };
 
 export default News;
