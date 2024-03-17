@@ -31,6 +31,7 @@ const News = () => {
   },[])
 
   return (
+    <>
     // <div className="w-full mt-8 relative -top-16 md:-top-24">
     //   {/* <h1 className="text-3xl text-center font-semibold mb-3">Latest News</h1> */}
     //   {news ? (
@@ -63,6 +64,7 @@ const News = () => {
     //     <div className="text-center mx-auto grid place-content-center">{<Loading/>}</div>
     //   )}
     // </div>
+    </>
   )
 };
 
