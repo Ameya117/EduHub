@@ -66,12 +66,12 @@ const Login = () => {
         />
         <div className="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
         <div className="flex h-full items-center justify-center relative">
-          <div className=" flex flex-col justify-center items-center pl-2 w-1/2 lg:w-2/3 ">
+          <div className="flex flex-col justify-center items-center pl-2 w-1/2 lg:w-2/3">
             <div className="text-white absolute m-auto w-[50%]">
               <h2 className="text-white font-light text-xl mx-auto w-fit">
                 Nice to see you again
               </h2>
-              <h1 className="z-20 text-7xl font-bold text-white tracking-wide text-center ">
+              <h1 className="z-20 text-7xl font-bold text-white tracking-wide text-center">
                 Welcome Back
               </h1>
               <div className="bg-white h-3 w-20 rounded-xl mx-auto my-8"></div>

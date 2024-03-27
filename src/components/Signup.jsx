@@ -66,7 +66,6 @@ const Signup = () => {
 
   return (
     <div className="flex flex-row h-[100vh]">
-    
       <div className="w-[65%] mx-auto shadow-2xl overflow-hidden relative hidden lg:block">
         <img
           className="absolute inset-0 h-full w-full object-cover"
